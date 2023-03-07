@@ -17,11 +17,20 @@ export default function Home({ posts }) {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<main className={styles.main}>
-				<h1>Next.js 13</h1>
-				<br />
-				{posts.slice(0, 5).map((post, idx) => (
-					<h3 key={idx}>{post.title}</h3>
-				))}
+				{/* <h1>Next.js 13</h1> */}
+				<div
+					style={{
+						alignItems: 'center',
+						textAlign: 'center',
+						margin: 20
+					}}
+				>
+					<h1>Next.js 13</h1>
+					<br />
+					{posts.slice(0, 5).map((post, idx) => (
+						<h3 key={idx}>{post.title}</h3>
+					))}
+				</div>
 			</main>
 		</>
 	);
